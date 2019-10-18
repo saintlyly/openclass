@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-tab-control":"/components/w-tab-control/w-tab-control",
+    "w-searchbar": "/components/w-searchbar/w-searchbar",
+    "w-cate-list": "/components/w-cate-list/w-cate-list",
+    "w-goods": "/components/w-goods/w-goods"
+    }
+}

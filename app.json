@@ -1,21 +1,22 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/category/category",
+    "pages/goods/goods",
     "pages/cart/cart",
+    "pages/home/home",
+    "pages/category/category",
     "pages/profile/profile",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "医学公开课",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/home",
         "text": "主页",
         "iconPath": "assets/images/tabbar/home.png",
         "selectedIconPath": "assets/images/tabbar/home_active.png"
@@ -41,6 +42,5 @@
     ],
     "selectedColor": "#F47378"
   },
-  "component": true,
   "sitemapLocation": "sitemap.json"
 }

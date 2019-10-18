@@ -4,18 +4,27 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
 	"appid": "wx4fde852e3d468524",
-	"projectname": "miniprogram-3",
+	"projectname": "openclass",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -28,6 +37,10 @@
 			"list": []
 		},
 		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
 			"current": -1,
 			"list": []
 		},

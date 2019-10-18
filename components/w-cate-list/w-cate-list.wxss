@@ -1,0 +1,27 @@
+/* components/w-cate-list/w-cate-list.wxss */
+/* @import '/assets/weui/weui.wxss'; */
+.w-cate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.w-cate-item {
+  flex-wrap:wrap;
+  width:160rpx;
+ border-radius: 50%;
+  margin: 20rpx auto;
+}
+.cate-title {
+  display: flex;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  }
+.cate-img {
+  display: flex;
+  height: 60rpx;
+  width: 60rpx;
+  justify-content: center;
+  margin: 0 auto;
+  }
+

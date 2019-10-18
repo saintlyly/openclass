@@ -1,0 +1,35 @@
+<!--pages/cart/cart.wxml-->
+<!-- 购物车为空 -->
+<!-- <view class="cart-empty">
+  <image src="/assets/images/cart/cart-null.png" class="cart-empty-img" mode='aspectFill'></image>
+  <view class="cart-empty-text">
+    购物车空空如也～~
+  </view>
+  <button type="warn" class="cart-empty-btn">
+    去逛逛
+  </button>
+  <view style="position:absolute;bottom:10rpx;width:750rpx;">
+  </view>
+</view> -->
+<!-- 购物车中有商品 -->
+<view class="cart-item">
+  <view class="cart-item-shop">商家</view>
+  <view class="cart-item-list">
+    <radio class="cart-item-list-check"> </radio>
+    <image src="/assets/images/8.png" mode='aspectFill' class="cart-item-list-img">
+    </image>
+    <view class="cart-item-list-info">
+      <text class="cart-goods-name">商品名称</text>
+      <text class="cart-goods-info">商品简介</text>
+      <text class="cart-goods-price">￥89元</text>
+    </view>
+    <view class="cart-item-list-num">
+      <view catchtap="subtractBtnTap">-</view>
+      <input value="1" class="cart-goods-num" disabled="true" type="number" />
+      <view>+</view>
+    </view>
+    <view class="cart-item-list-del">
+    <button type="warn" size="mini">删除</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<!--components/w-goods/w-goods.wxml-->
+<view class='goods'>
+
+  <block wx:for="{{goods}}" wx:key="index">
+    <view class='goods-item' bindtap='itemClick'>
+      <image class='image' src="{{item.img }}" mode='widthFix' />
+      <view class='desc-info'>
+        <view class='title'>{{item.title}}</view>
+        <view class='info'>
+          <text class='price'>¥{{item.proprice}}</text>
+          <text class='oriprice'>¥{{item.oriprice}}</text>
+           <image class='icon' style="margin-left:24rpx" src="/assets/images/common/collect.png" />
+           <image class='icon' src="/assets/images/common/service.png" />
+            <!-- <image class='icon' src="/assets/images/common/shop.png" /> -->
+            <text class='orders'>{{item.oriprice}}人购买</text>
+        </view>
+      </view>
+    </view>
+</block>
+
+</view>

@@ -1,1 +1,45 @@
-/* pages/category/category.wxss */
+.img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item-detail-content{
+  font-size: 32rpx;
+  color: grey;
+  margin: 5rpx 15rpx;
+}
+.item-detail-user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+  align-items: flex-end;
+  padding:0 10rpx 0 5rpx;
+}
+
+.item-detail-user-avator {
+  width: 50rpx;
+  height: 50rpx;
+ 
+}
+.item-detail-user-author{
+  font-size: 26rpx;
+  flex-grow:1;
+  color: lightcoral;
+  }
+  .item-detail-user-icon{
+    width: 50rpx;
+    height: 50rpx;
+    opacity: 0.6;
+   
+
+
+  }

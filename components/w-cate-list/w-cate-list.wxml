@@ -1,0 +1,13 @@
+<!--components/w-cate-list/w-cate-list.wxml-->
+<view class="page">
+  <view class="w-cate">
+
+    <block wx:for="{{cateitem}}" wx:key="*this">
+      <view class="w-cate-item">
+        <image src="{{item.img}}" class="cate-img"></image>
+        <view class="cate-title">{{item.title}}</view>
+      </view>
+    </block>
+
+  </view>
+</view>

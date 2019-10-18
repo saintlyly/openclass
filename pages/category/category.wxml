@@ -1,2 +1,42 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<w-tab-control titles="{{titles}}"></w-tab-control>
+
+<!-- 瀑布流 -->
+<view style="display:none">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
+</view>
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+  <view style="width:100%">
+    <view class="img_item">
+      <view wx:for="{{col1}}" wx:key="id">
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px"></image>
+        <view class="item-detail">
+          <view class="item-detail-content">
+            <text class="item-detail-name">瀑布liu测试瀑布liu测试瀑布liu测试瀑布liu测试</text>
+          </view>
+          <view class="item-detail-user">
+            <image src="/assets/images/avator/avator-male.png" class="item-detail-user-avator"></image>
+            <text class="item-detail-user-author">作者/商家/用户</text>
+            <!-- <icon type="success" class="item-detail-user-icon">123</icon> -->
+            <image src="/assets/images/ok.png" class="item-detail-user-icon"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="img_item">
+      <view wx:for="{{col2}}" wx:key="id">
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px"></image>
+       <view class="item-detail">
+          <view class="item-detail-content">
+            <text class="item-detail-name">瀑布liu测试瀑布liu测试瀑布liu测试瀑布liu测试</text>
+          </view>
+          <view class="item-detail-user">
+            <image src="/assets/images/avator/avator-male.png" class="item-detail-user-avator"></image>
+            <text class="item-detail-user-author">作者/商家/用户</text>
+            <!-- <icon type="success" class="item-detail-user-icon">123</icon> -->
+            <image src="/assets/images/ok.png" class="item-detail-user-icon"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
